@@ -1,0 +1,536 @@
+ INFO [main] 2021-01-04 14:32:48 (LocalConfigInfoProcessor.java:212) LOCAL_SNAPSHOT_PATH:C:\Users\matte\nacos\config
+ INFO [main] 2021-01-04 14:32:48 (Limiter.java:54) limitTime:5.0
+ INFO [main] 2021-01-04 14:32:48 (PropertySourceBootstrapConfiguration.java:112) Located property source: [BootstrapPropertySource@579447973 {name='bootstrapProperties-music-backend.properties,DEFAULT_GROUP', properties={}}, BootstrapPropertySource@1990421361 {name='bootstrapProperties-music-backend,DEFAULT_GROUP', properties={}}]
+ INFO [main] 2021-01-04 14:32:48 (SpringApplication.java:651) No active profile set, falling back to default profiles: default
+ INFO [main] 2021-01-04 14:32:49 (GenericScope.java:295) BeanFactory id=8e244ab3-3d4f-3e29-a458-fa89608f9af3
+ INFO [main] 2021-01-04 14:32:49 (TomcatWebServer.java:108) Tomcat initialized with port(s): 8082 (http)
+ INFO [main] 2021-01-04 14:32:49 (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 14:32:49 (DirectJDKLog.java:173) Starting service [Tomcat]
+ INFO [main] 2021-01-04 14:32:49 (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.41]
+ INFO [main] 2021-01-04 14:32:49 (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+ INFO [main] 2021-01-04 14:32:49 (ServletWebServerApplicationContext.java:285) Root WebApplicationContext: initialization completed in 1287 ms
+ INFO [main] 2021-01-04 14:32:50 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 14:32:50 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 14:32:50 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'applicationTaskExecutor'
+ INFO [main] 2021-01-04 14:32:50 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+ INFO [main] 2021-01-04 14:32:50 (InitUtils.java:64) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 14:32:50 (InitUtils.java:73) initializer namespace from System Environment :null
+ INFO [main] 2021-01-04 14:32:50 (InitUtils.java:83) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 14:32:51 (EndpointLinksResolver.java:58) Exposing 19 endpoint(s) beneath base path '/actuator'
+ INFO [main] 2021-01-04 14:32:51 (HostReactor.java:191) new ips(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+ INFO [main] 2021-01-04 14:32:51 (HostReactor.java:228) current ips:(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+ INFO [main] 2021-01-04 14:32:51 (EventDispatcher.java:83) [LISTENER] adding DEFAULT_GROUP@@music-backend with DEFAULT to listener map
+ INFO [main] 2021-01-04 14:32:51 (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 14:32:51 (TomcatWebServer.java:220) Tomcat started on port(s): 8082 (http) with context path ''
+ INFO [main] 2021-01-04 14:32:51 (BeatReactor.java:81) [BEAT] adding beat: BeatInfo{port=8082, ip='192.168.229.1', weight=1.0, serviceName='DEFAULT_GROUP@@music-backend', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+ INFO [main] 2021-01-04 14:32:51 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [main] 2021-01-04 14:32:51 (NacosServiceRegistry.java:71) nacos registry, DEFAULT_GROUP music-backend 192.168.229.1:8082 register finished
+ INFO [main] 2021-01-04 14:32:52 (StartupInfoLogger.java:61) Started MusicBackendApplication in 4.79 seconds (JVM running for 5.735)
+ INFO [main] 2021-01-04 14:32:52 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend+DEFAULT_GROUP
+ INFO [main] 2021-01-04 14:32:52 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend, group=DEFAULT_GROUP, cnt=1
+ INFO [main] 2021-01-04 14:32:52 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend.properties+DEFAULT_GROUP
+ INFO [main] 2021-01-04 14:32:52 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend.properties, group=DEFAULT_GROUP, cnt=1
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 14:32:52 (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 14:32:52 (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 14:32:52 (FrameworkServlet.java:547) Completed initialization in 9 ms
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 14:32:52 (DruidDataSource.java:985) {dataSource-1} inited
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-04 14:32:52 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609741972770,\"checksum\":\"756ed96b08f49f4cc3507b4330f61394\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2181930185999400} from /192.168.229.1
+ INFO [http-nio-8082-exec-1] 2021-01-04 14:36:07 (MyInterceptor.java:17) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-04 14:36:07 (MyInterceptor.java:18) request请求地址path[/testError]
+uri[/testError]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [main] 2021-01-04 14:54:05 (LocalConfigInfoProcessor.java:212) LOCAL_SNAPSHOT_PATH:C:\Users\matte\nacos\config
+ INFO [main] 2021-01-04 14:54:05 (Limiter.java:54) limitTime:5.0
+ INFO [main] 2021-01-04 14:54:05 (PropertySourceBootstrapConfiguration.java:112) Located property source: [BootstrapPropertySource@579447973 {name='bootstrapProperties-music-backend.properties,DEFAULT_GROUP', properties={}}, BootstrapPropertySource@1990421361 {name='bootstrapProperties-music-backend,DEFAULT_GROUP', properties={}}]
+ INFO [main] 2021-01-04 14:54:05 (SpringApplication.java:651) No active profile set, falling back to default profiles: default
+ INFO [main] 2021-01-04 14:54:06 (GenericScope.java:295) BeanFactory id=34b06751-f773-3539-8376-38c41199e477
+ INFO [main] 2021-01-04 14:54:07 (TomcatWebServer.java:108) Tomcat initialized with port(s): 8082 (http)
+ INFO [main] 2021-01-04 14:54:07 (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 14:54:07 (DirectJDKLog.java:173) Starting service [Tomcat]
+ INFO [main] 2021-01-04 14:54:07 (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.41]
+ INFO [main] 2021-01-04 14:54:07 (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+ INFO [main] 2021-01-04 14:54:07 (ServletWebServerApplicationContext.java:285) Root WebApplicationContext: initialization completed in 1187 ms
+ INFO [main] 2021-01-04 14:54:07 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 14:54:07 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 14:54:07 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'applicationTaskExecutor'
+ INFO [main] 2021-01-04 14:54:08 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+ INFO [main] 2021-01-04 14:54:08 (InitUtils.java:64) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 14:54:08 (InitUtils.java:73) initializer namespace from System Environment :null
+ INFO [main] 2021-01-04 14:54:08 (InitUtils.java:83) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 14:54:08 (EndpointLinksResolver.java:58) Exposing 19 endpoint(s) beneath base path '/actuator'
+ INFO [main] 2021-01-04 14:54:08 (HostReactor.java:191) new ips(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+ INFO [main] 2021-01-04 14:54:08 (HostReactor.java:228) current ips:(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+ INFO [main] 2021-01-04 14:54:08 (EventDispatcher.java:83) [LISTENER] adding DEFAULT_GROUP@@music-backend with DEFAULT to listener map
+ INFO [main] 2021-01-04 14:54:08 (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 14:54:08 (TomcatWebServer.java:220) Tomcat started on port(s): 8082 (http) with context path ''
+ INFO [main] 2021-01-04 14:54:08 (BeatReactor.java:81) [BEAT] adding beat: BeatInfo{port=8082, ip='192.168.229.1', weight=1.0, serviceName='DEFAULT_GROUP@@music-backend', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+ INFO [main] 2021-01-04 14:54:08 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [main] 2021-01-04 14:54:08 (NacosServiceRegistry.java:71) nacos registry, DEFAULT_GROUP music-backend 192.168.229.1:8082 register finished
+ INFO [main] 2021-01-04 14:54:09 (StartupInfoLogger.java:61) Started MusicBackendApplication in 4.442 seconds (JVM running for 5.46)
+ INFO [main] 2021-01-04 14:54:09 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend+DEFAULT_GROUP
+ INFO [main] 2021-01-04 14:54:09 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend, group=DEFAULT_GROUP, cnt=1
+ INFO [main] 2021-01-04 14:54:09 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend.properties+DEFAULT_GROUP
+ INFO [main] 2021-01-04 14:54:09 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend.properties, group=DEFAULT_GROUP, cnt=1
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 14:54:09 (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 14:54:09 (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 14:54:09 (FrameworkServlet.java:547) Completed initialization in 10 ms
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-04 14:54:09 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609743249857,\"checksum\":\"756ed96b08f49f4cc3507b4330f61394\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2183207273672400} from /192.168.229.1
+ INFO [RMI TCP Connection(3)-192.168.229.1] 2021-01-04 14:54:09 (DruidDataSource.java:985) {dataSource-1} inited
+ INFO [main] 2021-01-04 14:54:40 (LocalConfigInfoProcessor.java:212) LOCAL_SNAPSHOT_PATH:C:\Users\matte\nacos\config
+ INFO [main] 2021-01-04 14:54:40 (Limiter.java:54) limitTime:5.0
+ INFO [main] 2021-01-04 14:54:40 (PropertySourceBootstrapConfiguration.java:112) Located property source: [BootstrapPropertySource@579447973 {name='bootstrapProperties-music-backend.properties,DEFAULT_GROUP', properties={}}, BootstrapPropertySource@1990421361 {name='bootstrapProperties-music-backend,DEFAULT_GROUP', properties={}}]
+ INFO [main] 2021-01-04 14:54:40 (SpringApplication.java:651) No active profile set, falling back to default profiles: default
+ INFO [main] 2021-01-04 14:54:41 (GenericScope.java:295) BeanFactory id=34b06751-f773-3539-8376-38c41199e477
+ INFO [main] 2021-01-04 14:54:42 (TomcatWebServer.java:108) Tomcat initialized with port(s): 8082 (http)
+ INFO [main] 2021-01-04 14:54:42 (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 14:54:42 (DirectJDKLog.java:173) Starting service [Tomcat]
+ INFO [main] 2021-01-04 14:54:42 (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.41]
+ INFO [main] 2021-01-04 14:54:42 (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+ INFO [main] 2021-01-04 14:54:42 (ServletWebServerApplicationContext.java:285) Root WebApplicationContext: initialization completed in 1299 ms
+ INFO [main] 2021-01-04 14:54:42 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 14:54:42 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 14:54:42 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'applicationTaskExecutor'
+ INFO [main] 2021-01-04 14:54:43 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+ INFO [main] 2021-01-04 14:54:43 (InitUtils.java:64) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 14:54:43 (InitUtils.java:73) initializer namespace from System Environment :null
+ INFO [main] 2021-01-04 14:54:43 (InitUtils.java:83) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 14:54:43 (EndpointLinksResolver.java:58) Exposing 19 endpoint(s) beneath base path '/actuator'
+ INFO [main] 2021-01-04 14:54:43 (HostReactor.java:191) new ips(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 14:54:43 (HostReactor.java:228) current ips:(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 14:54:43 (EventDispatcher.java:83) [LISTENER] adding DEFAULT_GROUP@@music-backend with DEFAULT to listener map
+ INFO [main] 2021-01-04 14:54:43 (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 14:54:43 (TomcatWebServer.java:220) Tomcat started on port(s): 8082 (http) with context path ''
+ INFO [main] 2021-01-04 14:54:43 (BeatReactor.java:81) [BEAT] adding beat: BeatInfo{port=8082, ip='192.168.229.1', weight=1.0, serviceName='DEFAULT_GROUP@@music-backend', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+ INFO [main] 2021-01-04 14:54:43 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [main] 2021-01-04 14:54:43 (NacosServiceRegistry.java:71) nacos registry, DEFAULT_GROUP music-backend 192.168.229.1:8082 register finished
+ INFO [main] 2021-01-04 14:54:44 (StartupInfoLogger.java:61) Started MusicBackendApplication in 4.68 seconds (JVM running for 5.604)
+ INFO [main] 2021-01-04 14:54:44 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend+DEFAULT_GROUP
+ INFO [main] 2021-01-04 14:54:44 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend, group=DEFAULT_GROUP, cnt=1
+ INFO [main] 2021-01-04 14:54:44 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend.properties+DEFAULT_GROUP
+ INFO [main] 2021-01-04 14:54:44 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend.properties, group=DEFAULT_GROUP, cnt=1
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 14:54:44 (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 14:54:44 (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 14:54:44 (FrameworkServlet.java:547) Completed initialization in 9 ms
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 14:54:44 (DruidDataSource.java:985) {dataSource-1} inited
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-04 14:54:44 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609743284982,\"checksum\":\"756ed96b08f49f4cc3507b4330f61394\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2183242398346500} from /192.168.229.1
+ INFO [http-nio-8082-exec-1] 2021-01-04 14:55:11 (MyInterceptor.java:23) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-04 14:55:11 (MyInterceptor.java:24) request请求地址path[/testError]
+uri[/testError]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-8] 2021-01-04 14:56:25 (MyInterceptor.java:23) 拦截器被调用
+ INFO [http-nio-8082-exec-8] 2021-01-04 14:56:25 (MyInterceptor.java:24) request请求地址path[/testError]
+uri[/testError]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-7] 2021-01-04 15:04:59 (MyInterceptor.java:23) 拦截器被调用
+ INFO [http-nio-8082-exec-7] 2021-01-04 15:04:59 (MyInterceptor.java:24) request请求地址path[/testError]
+uri[/testError]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-10] 2021-01-04 15:06:13 (MyInterceptor.java:23) 拦截器被调用
+ INFO [http-nio-8082-exec-10] 2021-01-04 15:06:13 (MyInterceptor.java:24) request请求地址path[/testError]
+uri[/testError]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [main] 2021-01-04 15:09:22 (LocalConfigInfoProcessor.java:212) LOCAL_SNAPSHOT_PATH:C:\Users\matte\nacos\config
+ INFO [main] 2021-01-04 15:09:22 (Limiter.java:54) limitTime:5.0
+ INFO [main] 2021-01-04 15:09:22 (PropertySourceBootstrapConfiguration.java:112) Located property source: [BootstrapPropertySource@579447973 {name='bootstrapProperties-music-backend.properties,DEFAULT_GROUP', properties={}}, BootstrapPropertySource@1990421361 {name='bootstrapProperties-music-backend,DEFAULT_GROUP', properties={}}]
+ INFO [main] 2021-01-04 15:09:22 (SpringApplication.java:651) No active profile set, falling back to default profiles: default
+ INFO [main] 2021-01-04 15:09:23 (GenericScope.java:295) BeanFactory id=34b06751-f773-3539-8376-38c41199e477
+ INFO [main] 2021-01-04 15:09:23 (TomcatWebServer.java:108) Tomcat initialized with port(s): 8082 (http)
+ INFO [main] 2021-01-04 15:09:23 (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 15:09:23 (DirectJDKLog.java:173) Starting service [Tomcat]
+ INFO [main] 2021-01-04 15:09:23 (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.41]
+ INFO [main] 2021-01-04 15:09:23 (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+ INFO [main] 2021-01-04 15:09:23 (ServletWebServerApplicationContext.java:285) Root WebApplicationContext: initialization completed in 1151 ms
+ INFO [main] 2021-01-04 15:09:24 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 15:09:24 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 15:09:24 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'applicationTaskExecutor'
+ INFO [main] 2021-01-04 15:09:24 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+ INFO [main] 2021-01-04 15:09:24 (InitUtils.java:64) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 15:09:24 (InitUtils.java:73) initializer namespace from System Environment :null
+ INFO [main] 2021-01-04 15:09:24 (InitUtils.java:83) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 15:09:25 (EndpointLinksResolver.java:58) Exposing 19 endpoint(s) beneath base path '/actuator'
+ INFO [main] 2021-01-04 15:09:25 (HostReactor.java:191) new ips(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 15:09:25 (HostReactor.java:228) current ips:(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 15:09:25 (EventDispatcher.java:83) [LISTENER] adding DEFAULT_GROUP@@music-backend with DEFAULT to listener map
+ INFO [main] 2021-01-04 15:09:25 (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 15:09:25 (TomcatWebServer.java:220) Tomcat started on port(s): 8082 (http) with context path ''
+ INFO [main] 2021-01-04 15:09:25 (BeatReactor.java:81) [BEAT] adding beat: BeatInfo{port=8082, ip='192.168.229.1', weight=1.0, serviceName='DEFAULT_GROUP@@music-backend', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+ INFO [main] 2021-01-04 15:09:25 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [main] 2021-01-04 15:09:25 (NacosServiceRegistry.java:71) nacos registry, DEFAULT_GROUP music-backend 192.168.229.1:8082 register finished
+ INFO [main] 2021-01-04 15:09:25 (StartupInfoLogger.java:61) Started MusicBackendApplication in 4.304 seconds (JVM running for 5.186)
+ INFO [main] 2021-01-04 15:09:25 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend+DEFAULT_GROUP
+ INFO [main] 2021-01-04 15:09:25 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend, group=DEFAULT_GROUP, cnt=1
+ INFO [main] 2021-01-04 15:09:25 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend.properties+DEFAULT_GROUP
+ INFO [main] 2021-01-04 15:09:25 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend.properties, group=DEFAULT_GROUP, cnt=1
+ INFO [RMI TCP Connection(3)-192.168.229.1] 2021-01-04 15:09:26 (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(3)-192.168.229.1] 2021-01-04 15:09:26 (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(3)-192.168.229.1] 2021-01-04 15:09:26 (FrameworkServlet.java:547) Completed initialization in 10 ms
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 15:09:26 (DruidDataSource.java:985) {dataSource-1} inited
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-04 15:09:26 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609744166560,\"checksum\":\"756ed96b08f49f4cc3507b4330f61394\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2184123975962800} from /192.168.229.1
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:09:30 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:09:30 (MyInterceptor.java:26) request请求地址path[/testError]
+uri[/testError]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [main] 2021-01-04 15:11:10 (LocalConfigInfoProcessor.java:212) LOCAL_SNAPSHOT_PATH:C:\Users\matte\nacos\config
+ INFO [main] 2021-01-04 15:11:10 (Limiter.java:54) limitTime:5.0
+ INFO [main] 2021-01-04 15:11:10 (PropertySourceBootstrapConfiguration.java:112) Located property source: [BootstrapPropertySource@579447973 {name='bootstrapProperties-music-backend.properties,DEFAULT_GROUP', properties={}}, BootstrapPropertySource@1990421361 {name='bootstrapProperties-music-backend,DEFAULT_GROUP', properties={}}]
+ INFO [main] 2021-01-04 15:11:10 (SpringApplication.java:651) No active profile set, falling back to default profiles: default
+ INFO [main] 2021-01-04 15:11:11 (GenericScope.java:295) BeanFactory id=34b06751-f773-3539-8376-38c41199e477
+ INFO [main] 2021-01-04 15:11:11 (TomcatWebServer.java:108) Tomcat initialized with port(s): 8082 (http)
+ INFO [main] 2021-01-04 15:11:11 (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 15:11:11 (DirectJDKLog.java:173) Starting service [Tomcat]
+ INFO [main] 2021-01-04 15:11:11 (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.41]
+ INFO [main] 2021-01-04 15:11:11 (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+ INFO [main] 2021-01-04 15:11:11 (ServletWebServerApplicationContext.java:285) Root WebApplicationContext: initialization completed in 1145 ms
+ INFO [main] 2021-01-04 15:11:11 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 15:11:11 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 15:11:11 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'applicationTaskExecutor'
+ INFO [main] 2021-01-04 15:11:12 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+ INFO [main] 2021-01-04 15:11:12 (InitUtils.java:64) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 15:11:12 (InitUtils.java:73) initializer namespace from System Environment :null
+ INFO [main] 2021-01-04 15:11:12 (InitUtils.java:83) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 15:11:13 (EndpointLinksResolver.java:58) Exposing 19 endpoint(s) beneath base path '/actuator'
+ INFO [main] 2021-01-04 15:11:13 (HostReactor.java:191) new ips(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 15:11:13 (HostReactor.java:228) current ips:(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 15:11:13 (EventDispatcher.java:83) [LISTENER] adding DEFAULT_GROUP@@music-backend with DEFAULT to listener map
+ INFO [main] 2021-01-04 15:11:13 (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 15:11:13 (TomcatWebServer.java:220) Tomcat started on port(s): 8082 (http) with context path ''
+ INFO [main] 2021-01-04 15:11:13 (BeatReactor.java:81) [BEAT] adding beat: BeatInfo{port=8082, ip='192.168.229.1', weight=1.0, serviceName='DEFAULT_GROUP@@music-backend', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+ INFO [main] 2021-01-04 15:11:13 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [main] 2021-01-04 15:11:13 (NacosServiceRegistry.java:71) nacos registry, DEFAULT_GROUP music-backend 192.168.229.1:8082 register finished
+ INFO [main] 2021-01-04 15:11:13 (StartupInfoLogger.java:61) Started MusicBackendApplication in 4.295 seconds (JVM running for 5.276)
+ INFO [main] 2021-01-04 15:11:13 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend+DEFAULT_GROUP
+ INFO [main] 2021-01-04 15:11:13 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend, group=DEFAULT_GROUP, cnt=1
+ INFO [main] 2021-01-04 15:11:13 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend.properties+DEFAULT_GROUP
+ INFO [main] 2021-01-04 15:11:13 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend.properties, group=DEFAULT_GROUP, cnt=1
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 15:11:14 (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 15:11:14 (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-04 15:11:14 (FrameworkServlet.java:547) Completed initialization in 11 ms
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-04 15:11:14 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609744274176,\"checksum\":\"edb5ee24307e59fa5a7ec8f317e3b9f7\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2184231592290100} from /192.168.229.1
+ INFO [RMI TCP Connection(1)-192.168.229.1] 2021-01-04 15:11:14 (DruidDataSource.java:985) {dataSource-1} inited
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-04 15:11:19 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609744279179,\"checksum\":\"edb5ee24307e59fa5a7ec8f317e3b9f7\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2184236595576200} from /192.168.229.1
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:11:29 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:11:29 (MyInterceptor.java:26) request请求地址path[/testError]
+uri[/testError]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-4] 2021-01-04 15:11:54 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-04 15:11:54 (MyInterceptor.java:26) request请求地址path[/vasfgasf]
+uri[/vasfgasf]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-4] 2021-01-04 15:11:54 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-04 15:11:54 (MyInterceptor.java:26) request请求地址path[/error]
+uri[/error]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [main] 2021-01-04 15:18:15 (LocalConfigInfoProcessor.java:212) LOCAL_SNAPSHOT_PATH:C:\Users\matte\nacos\config
+ INFO [main] 2021-01-04 15:18:15 (Limiter.java:54) limitTime:5.0
+ INFO [main] 2021-01-04 15:18:15 (PropertySourceBootstrapConfiguration.java:112) Located property source: [BootstrapPropertySource@579447973 {name='bootstrapProperties-music-backend.properties,DEFAULT_GROUP', properties={}}, BootstrapPropertySource@1990421361 {name='bootstrapProperties-music-backend,DEFAULT_GROUP', properties={}}]
+ INFO [main] 2021-01-04 15:18:15 (SpringApplication.java:651) No active profile set, falling back to default profiles: default
+ INFO [main] 2021-01-04 15:18:16 (GenericScope.java:295) BeanFactory id=34b06751-f773-3539-8376-38c41199e477
+ INFO [main] 2021-01-04 15:18:16 (TomcatWebServer.java:108) Tomcat initialized with port(s): 8082 (http)
+ INFO [main] 2021-01-04 15:18:16 (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 15:18:16 (DirectJDKLog.java:173) Starting service [Tomcat]
+ INFO [main] 2021-01-04 15:18:16 (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.41]
+ INFO [main] 2021-01-04 15:18:17 (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+ INFO [main] 2021-01-04 15:18:17 (ServletWebServerApplicationContext.java:285) Root WebApplicationContext: initialization completed in 1159 ms
+ INFO [main] 2021-01-04 15:18:17 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 15:18:17 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-04 15:18:17 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'applicationTaskExecutor'
+ INFO [main] 2021-01-04 15:18:17 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+ INFO [main] 2021-01-04 15:18:17 (InitUtils.java:64) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 15:18:17 (InitUtils.java:73) initializer namespace from System Environment :null
+ INFO [main] 2021-01-04 15:18:17 (InitUtils.java:83) initializer namespace from System Property :null
+ INFO [main] 2021-01-04 15:18:18 (EndpointLinksResolver.java:58) Exposing 19 endpoint(s) beneath base path '/actuator'
+ INFO [main] 2021-01-04 15:18:18 (HostReactor.java:191) new ips(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 15:18:18 (HostReactor.java:228) current ips:(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-04 15:18:18 (EventDispatcher.java:83) [LISTENER] adding DEFAULT_GROUP@@music-backend with DEFAULT to listener map
+ INFO [main] 2021-01-04 15:18:18 (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-04 15:18:18 (TomcatWebServer.java:220) Tomcat started on port(s): 8082 (http) with context path ''
+ INFO [main] 2021-01-04 15:18:18 (BeatReactor.java:81) [BEAT] adding beat: BeatInfo{port=8082, ip='192.168.229.1', weight=1.0, serviceName='DEFAULT_GROUP@@music-backend', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+ INFO [main] 2021-01-04 15:18:18 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [main] 2021-01-04 15:18:18 (NacosServiceRegistry.java:71) nacos registry, DEFAULT_GROUP music-backend 192.168.229.1:8082 register finished
+ INFO [main] 2021-01-04 15:18:19 (StartupInfoLogger.java:61) Started MusicBackendApplication in 4.499 seconds (JVM running for 5.383)
+ INFO [main] 2021-01-04 15:18:19 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend+DEFAULT_GROUP
+ INFO [main] 2021-01-04 15:18:19 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend, group=DEFAULT_GROUP, cnt=1
+ INFO [main] 2021-01-04 15:18:19 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend.properties+DEFAULT_GROUP
+ INFO [main] 2021-01-04 15:18:19 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend.properties, group=DEFAULT_GROUP, cnt=1
+ INFO [RMI TCP Connection(4)-192.168.229.1] 2021-01-04 15:18:19 (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(4)-192.168.229.1] 2021-01-04 15:18:19 (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(4)-192.168.229.1] 2021-01-04 15:18:19 (FrameworkServlet.java:547) Completed initialization in 7 ms
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-04 15:18:19 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609744699876,\"checksum\":\"756ed96b08f49f4cc3507b4330f61394\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2184657291992399} from /192.168.229.1
+ INFO [RMI TCP Connection(5)-192.168.229.1] 2021-01-04 15:18:19 (DruidDataSource.java:985) {dataSource-1} inited
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:18:33 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:18:33 (MyInterceptor.java:26) request请求地址path[/vasfgasf]
+uri[/vasfgasf]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:18:33 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-04 15:18:33 (MyInterceptor.java:26) request请求地址path[/error]
+uri[/error]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-2] 2021-01-04 15:18:45 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-2] 2021-01-04 15:18:45 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-4] 2021-01-04 16:17:38 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-04 16:17:38 (MyInterceptor.java:26) request请求地址path[/favicon.ico]
+uri[/favicon.ico]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [http-nio-8082-exec-4] 2021-01-04 16:17:38 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-04 16:17:38 (MyInterceptor.java:26) request请求地址path[/error]
+uri[/error]
+远程主机名[0:0:0:0:0:0:0:1]
+远程主机[0:0:0:0:0:0:0:1]
+ INFO [com.alibaba.nacos.naming.beat.sender] 2021-01-04 20:18:28 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@music-backend', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [com.alibaba.nacos.naming.beat.sender] 2021-01-05 02:45:56 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@music-backend', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [com.alibaba.nacos.naming.beat.sender] 2021-01-05 08:30:10 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@music-backend', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [com.alibaba.nacos.naming.beat.sender] 2021-01-05 11:58:32 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@music-backend', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [com.alibaba.nacos.naming.beat.sender] 2021-01-05 18:29:43 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@music-backend', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [com.alibaba.nacos.naming.beat.sender] 2021-01-05 21:58:48 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@music-backend', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [com.alibaba.nacos.naming.beat.sender] 2021-01-06 08:30:46 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@music-backend', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:34:25 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:34:25 (MyInterceptor.java:26) request请求地址path[/albums]
+uri[/albums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:34:25 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:34:25 (MyInterceptor.java:26) request请求地址path[/singers]
+uri[/singers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:34:25 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:34:25 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:34:25 (MyInterceptor.java:26) request请求地址path[/allAlbums]
+uri[/allAlbums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:34:25 (MyInterceptor.java:26) request请求地址path[/allSingers]
+uri[/allSingers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:34:25 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:34:25 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-9] 2021-01-06 08:35:18 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-9] 2021-01-06 08:35:18 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-10] 2021-01-06 08:35:18 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-10] 2021-01-06 08:35:18 (MyInterceptor.java:26) request请求地址path[/singers]
+uri[/singers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:35:18 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-8] 2021-01-06 08:35:18 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:35:18 (MyInterceptor.java:26) request请求地址path[/allAlbums]
+uri[/allAlbums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-8] 2021-01-06 08:35:18 (MyInterceptor.java:26) request请求地址path[/albums]
+uri[/albums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:35:18 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:35:18 (MyInterceptor.java:26) request请求地址path[/allSingers]
+uri[/allSingers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:39:40 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:39:40 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:39:40 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:39:40 (MyInterceptor.java:26) request请求地址path[/singers]
+uri[/singers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:39:40 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:39:40 (MyInterceptor.java:26) request请求地址path[/albums]
+uri[/albums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:39:40 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-10] 2021-01-06 08:39:40 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:39:40 (MyInterceptor.java:26) request请求地址path[/allAlbums]
+uri[/allAlbums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-10] 2021-01-06 08:39:40 (MyInterceptor.java:26) request请求地址path[/allSingers]
+uri[/allSingers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-8] 2021-01-06 08:46:31 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-8] 2021-01-06 08:46:31 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:46:31 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:46:31 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:46:31 (MyInterceptor.java:26) request请求地址path[/albums]
+uri[/albums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:46:31 (MyInterceptor.java:26) request请求地址path[/singers]
+uri[/singers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:46:31 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:46:31 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:46:31 (MyInterceptor.java:26) request请求地址path[/allSingers]
+uri[/allSingers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:46:31 (MyInterceptor.java:26) request请求地址path[/allAlbums]
+uri[/allAlbums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [main] 2021-01-06 08:50:32 (LocalConfigInfoProcessor.java:212) LOCAL_SNAPSHOT_PATH:C:\Users\matte\nacos\config
+ INFO [main] 2021-01-06 08:50:32 (Limiter.java:54) limitTime:5.0
+ INFO [main] 2021-01-06 08:50:32 (PropertySourceBootstrapConfiguration.java:112) Located property source: [BootstrapPropertySource@579447973 {name='bootstrapProperties-music-backend.properties,DEFAULT_GROUP', properties={}}, BootstrapPropertySource@1990421361 {name='bootstrapProperties-music-backend,DEFAULT_GROUP', properties={}}]
+ INFO [main] 2021-01-06 08:50:32 (SpringApplication.java:651) No active profile set, falling back to default profiles: default
+ INFO [main] 2021-01-06 08:50:34 (GenericScope.java:295) BeanFactory id=34b06751-f773-3539-8376-38c41199e477
+ INFO [main] 2021-01-06 08:50:34 (TomcatWebServer.java:108) Tomcat initialized with port(s): 8082 (http)
+ INFO [main] 2021-01-06 08:50:34 (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-06 08:50:34 (DirectJDKLog.java:173) Starting service [Tomcat]
+ INFO [main] 2021-01-06 08:50:34 (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.41]
+ INFO [main] 2021-01-06 08:50:34 (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+ INFO [main] 2021-01-06 08:50:34 (ServletWebServerApplicationContext.java:285) Root WebApplicationContext: initialization completed in 1844 ms
+ INFO [main] 2021-01-06 08:50:35 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-06 08:50:35 (URLConfigurationSource.java:122) To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ INFO [main] 2021-01-06 08:50:35 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'applicationTaskExecutor'
+ INFO [main] 2021-01-06 08:50:36 (InetUtils.java:170) Cannot determine local hostname
+ INFO [main] 2021-01-06 08:50:36 (ExecutorConfigurationSupport.java:181) Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+ INFO [main] 2021-01-06 08:50:36 (InitUtils.java:64) initializer namespace from System Property :null
+ INFO [main] 2021-01-06 08:50:36 (InitUtils.java:73) initializer namespace from System Environment :null
+ INFO [main] 2021-01-06 08:50:36 (InitUtils.java:83) initializer namespace from System Property :null
+ INFO [main] 2021-01-06 08:50:38 (InetUtils.java:170) Cannot determine local hostname
+ INFO [main] 2021-01-06 08:50:38 (EndpointLinksResolver.java:58) Exposing 19 endpoint(s) beneath base path '/actuator'
+ INFO [main] 2021-01-06 08:50:38 (HostReactor.java:191) new ips(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-06 08:50:38 (HostReactor.java:228) current ips:(1) service: DEFAULT_GROUP@@music-backend@@DEFAULT -> [{"instanceId":"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend","ip":"192.168.229.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@music-backend","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+ INFO [main] 2021-01-06 08:50:38 (EventDispatcher.java:83) [LISTENER] adding DEFAULT_GROUP@@music-backend with DEFAULT to listener map
+ INFO [main] 2021-01-06 08:50:38 (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8082"]
+ INFO [main] 2021-01-06 08:50:38 (TomcatWebServer.java:220) Tomcat started on port(s): 8082 (http) with context path ''
+ INFO [main] 2021-01-06 08:50:38 (BeatReactor.java:81) [BEAT] adding beat: BeatInfo{port=8082, ip='192.168.229.1', weight=1.0, serviceName='DEFAULT_GROUP@@music-backend', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+ INFO [main] 2021-01-06 08:50:38 (NamingProxy.java:223) [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@music-backend with instance: Instance{instanceId='null', ip='192.168.229.1', port=8082, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+ INFO [main] 2021-01-06 08:50:38 (NacosServiceRegistry.java:71) nacos registry, DEFAULT_GROUP music-backend 192.168.229.1:8082 register finished
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-06 08:50:39 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609894239993,\"checksum\":\"edb5ee24307e59fa5a7ec8f317e3b9f7\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2334206714143700} from /192.168.229.1
+ INFO [main] 2021-01-06 08:50:40 (InetUtils.java:170) Cannot determine local hostname
+ INFO [main] 2021-01-06 08:50:40 (StartupInfoLogger.java:61) Started MusicBackendApplication in 11.196 seconds (JVM running for 12.394)
+ INFO [main] 2021-01-06 08:50:40 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend+DEFAULT_GROUP
+ INFO [main] 2021-01-06 08:50:40 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend, group=DEFAULT_GROUP, cnt=1
+ INFO [main] 2021-01-06 08:50:40 (ClientWorker.java:262) [fixed-localhost_8848] [subscribe] music-backend.properties+DEFAULT_GROUP
+ INFO [main] 2021-01-06 08:50:40 (CacheData.java:93) [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=music-backend.properties, group=DEFAULT_GROUP, cnt=1
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-06 08:50:41 (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-06 08:50:41 (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+ INFO [RMI TCP Connection(2)-192.168.229.1] 2021-01-06 08:50:41 (FrameworkServlet.java:547) Completed initialization in 11 ms
+ INFO [RMI TCP Connection(3)-192.168.229.1] 2021-01-06 08:50:41 (DruidDataSource.java:985) {dataSource-1} inited
+ INFO [com.alibaba.nacos.naming.push.receiver] 2021-01-06 08:50:44 (PushReceiver.java:86) received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.229.1\",\"port\":8082,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.229.1#8082#DEFAULT#DEFAULT_GROUP@@music-backend\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@music-backend\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@music-backend\",\"name\":\"DEFAULT_GROUP@@music-backend\",\"cacheMillis\":10000,\"lastRefTime\":1609894244985,\"checksum\":\"edb5ee24307e59fa5a7ec8f317e3b9f7\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":2334211705562500} from /192.168.229.1
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:50:55 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:50:55 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:50:55 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:50:55 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:50:55 (MyInterceptor.java:26) request请求地址path[/albums]
+uri[/albums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:50:55 (MyInterceptor.java:26) request请求地址path[/allAlbums]
+uri[/allAlbums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:50:55 (MyInterceptor.java:26) request请求地址path[/allSingers]
+uri[/allSingers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:50:55 (MyInterceptor.java:26) request请求地址path[/singers]
+uri[/singers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:50:55 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:50:55 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:51:51 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:51:51 (MyInterceptor.java:26) request请求地址path[/updateCoverUrl]
+uri[/updateCoverUrl]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:51:51 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:51:51 (MyInterceptor.java:26) request请求地址path[/error]
+uri[/error]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:51:54 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:51:54 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-10] 2021-01-06 08:51:54 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-8] 2021-01-06 08:51:54 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-9] 2021-01-06 08:51:54 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-8] 2021-01-06 08:51:54 (MyInterceptor.java:26) request请求地址path[/albums]
+uri[/albums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-10] 2021-01-06 08:51:54 (MyInterceptor.java:26) request请求地址path[/allAlbums]
+uri[/allAlbums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-9] 2021-01-06 08:51:54 (MyInterceptor.java:26) request请求地址path[/singers]
+uri[/singers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:51:54 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-1] 2021-01-06 08:51:54 (MyInterceptor.java:26) request请求地址path[/allSingers]
+uri[/allSingers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:52:32 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-3] 2021-01-06 08:52:32 (MyInterceptor.java:26) request请求地址path[/]
+uri[/]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:52:32 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-4] 2021-01-06 08:52:32 (MyInterceptor.java:26) request请求地址path[/]
+uri[/]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:52:35 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-2] 2021-01-06 08:52:35 (MyInterceptor.java:26) request请求地址path[/musics]
+uri[/musics]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:52:35 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:52:35 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-5] 2021-01-06 08:52:35 (MyInterceptor.java:26) request请求地址path[/albums]
+uri[/albums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-6] 2021-01-06 08:52:35 (MyInterceptor.java:26) request请求地址path[/singers]
+uri[/singers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:52:35 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-9] 2021-01-06 08:52:35 (MyInterceptor.java:25) 拦截器被调用
+ INFO [http-nio-8082-exec-7] 2021-01-06 08:52:35 (MyInterceptor.java:26) request请求地址path[/allAlbums]
+uri[/allAlbums]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]
+ INFO [http-nio-8082-exec-9] 2021-01-06 08:52:35 (MyInterceptor.java:26) request请求地址path[/allSingers]
+uri[/allSingers]
+远程主机名[127.0.0.1]
+远程主机[127.0.0.1]

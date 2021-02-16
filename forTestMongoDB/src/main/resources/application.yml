@@ -1,0 +1,14 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: music-test
+  data:
+    mongodb:
+      host: 139.224.135.120
+      port: 27017
+      database: myTest
+  elasticsearch:
+    rest:
+      uris: http://127.0.0.1:9200

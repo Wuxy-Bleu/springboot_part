@@ -1,0 +1,60 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: adminApp
+  security:
+    user:
+      name: wuxy
+      password: 123
+  datasource:
+    druid:
+      music-admin:
+        url: jdbc:mysql://localhost:3306/music_admin?serverTimezone=UTC
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.cj.jdbc.Driver
+      tp-music:
+        url: jdbc:mysql://localhost:3306/tp_music?serverTimezone=UTC
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #使用Lettuce client
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 0
+    # Redis服务器地址
+    host: 139.224.135.120
+    # Redis 线程池设置
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+        max-active: 8
+        # 连接池中的最大空闲连接 默认 8
+        max-idle: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        max-wait: -1
+        # 连接池中的最小空闲连接 默认 0
+        min-idle: 0
+    # Redis服务器连接端口
+    port: 6379
+    # 链接超时时间 单位 ms（毫秒）
+    timeout: 3000
+#    password: 123
+
+  #mongodb
+  data:
+    mongodb:
+      host: 139.224.135.120
+      port: 27017
+      database: myTest
+
+MyJwt:
+  JWT_SECRET_KEY: C*F-JaNdRgUkXn2r5u8x/A?D(G+KbPeShVmYq3s6v9y$B&E)H@McQfTjWnZr4u7w
+
+mybatis-plus:
+  configuration:
+    #控制台打印完整带参数SQL语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

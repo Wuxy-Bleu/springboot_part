@@ -1,0 +1,24 @@
+alibaba:
+  cloud:
+    access-key: LTAI4G1KczRx4Aeju4eShCD5
+    secret-key: d4XFPpeR7p8QkLDKfUCJ61UE8jTpX6
+    oss:
+      endpoint: oss-cn-shanghai.aliyuncs.com
+      bucket: bleuweb-music
+      callbackUrl: http://localhost:8082/oss/callback
+
+server:
+  port: 8089
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: music-upload
+logging:
+  config: classpath:log4j2.xml
+
+
+

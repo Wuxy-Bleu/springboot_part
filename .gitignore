@@ -1,0 +1,12 @@
+### IntelliJ IDEA ###
+.idea/
+# .idea配置
+*.iml
+# 根模块和所有模块下的.iml文件
+target/
+# 所有模块下编译后的文件
+
+### VS Code ###
+.vscode/
+node_modules/
+dist/
