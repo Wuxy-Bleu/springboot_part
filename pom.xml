@@ -25,6 +25,7 @@
         <module>forTestMongoDB</module>
         <module>music_admin</module>
         <module>music_chat</module>
+        <module>music_mail</module>
     </modules>
 
     <properties>

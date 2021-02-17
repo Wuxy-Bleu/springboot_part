@@ -71,8 +71,12 @@ public class WebLogAspect {
         // 打印请求的 IP
         log.info("IP             : {}", request.getRemoteAddr());
         // 打印请求入参
-        log.info("为什么这里不执行啊");
         try {
+            try {
+                Object[] args = joinPoint.getArgs();
+            } catch (Exception e) {
+                log.info(e.getMessage());
+            }
             System.out.println(new Gson().toJson(joinPoint.getArgs()));
             log.info("Request Args   : {}", new Gson().toJson(joinPoint.getArgs()));
         } catch (Exception e) {

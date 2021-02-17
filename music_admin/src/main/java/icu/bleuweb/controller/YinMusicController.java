@@ -117,20 +117,35 @@ public class YinMusicController {
     }
 
     @PostMapping("/comment/add")
-    @WebLog(description = "给歌单或者歌曲增加评论")
-    public void addComment(HttpServletRequest request) {
+//    @WebLog(description = "给歌单或者歌曲增加评论")
+    public JSONObject addComment(HttpServletRequest request) {
         String user_id = request.getParameter("userId");
         String type = request.getParameter("type");
         String song_list_id = request.getParameter("songListId");
         String song_id = request.getParameter("songId");
         String content = request.getParameter("content").trim();
-        log.info("这又是哪里的异常被处理了,所以什么都看不出来吗");
         Comment comment = new Comment();
         comment.setUserId(Integer.parseInt(user_id));
-        comment.setType(new Byte(type) == 0 ? Integer.parseInt(song_id) : Integer.parseInt(song_list_id));
+        if (song_list_id != null)
+            comment.setSongListId(Integer.parseInt(song_list_id));
+        if (song_id != null)
+            comment.setSongId(Integer.parseInt(song_id));
+//        comment.setType(new Byte(type) == 0 ? Integer.parseInt(song_id) : Integer.parseInt(song_list_id));
+        comment.setType(Integer.parseInt(type));
         comment.setContent(content);
-//        comment.setCreateTime(new LocalDateTime());
+        comment.setCreateTime(LocalDateTime.now());
         log.info(comment.toString());
+        boolean res = yinMusicService.addComment(comment);
+        JSONObject jsonObject = new JSONObject();
+        if (res) {
+            jsonObject.put("code", 1);
+            jsonObject.put("msg", "评论成功");
+            return jsonObject;
+        } else {
+            jsonObject.put("code", 0);
+            jsonObject.put("msg", "评论失败");
+            return jsonObject;
+        }
     }
 
 

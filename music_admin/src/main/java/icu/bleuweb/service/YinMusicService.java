@@ -28,4 +28,6 @@ public interface YinMusicService extends IService<SongListBean> {
     List<Comment> getSongComment(int songId);
 
     boolean setRankForPlaylist(HashMap<String, Integer> map);
+
+    boolean addComment(Comment comment);
 }

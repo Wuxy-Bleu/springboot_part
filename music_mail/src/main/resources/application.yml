@@ -1,0 +1,21 @@
+server:
+  port: 8084
+spring:
+  mail:
+    host: smtp.gmail.com
+    username: youraccount@gmail.com
+    password: yourpassword
+    port: 587
+    properties:
+      mail:
+        debug: true
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+          timeout: 5000
+          writetimeout: 5000
+        transport:
+          protocol: smtp
+

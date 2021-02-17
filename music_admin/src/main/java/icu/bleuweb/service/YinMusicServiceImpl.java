@@ -96,4 +96,13 @@ public class YinMusicServiceImpl extends ServiceImpl<SongListMapper, SongListBea
 
         return rankMapper.setRankForPlaylist(rank);
     }
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public boolean addComment(Comment comment) {
+        if (comment.getType() == 1)
+            return commentMapper.addPlayListComment(comment);
+        else
+            return commentMapper.addSongComment(comment);
+    }
 }
