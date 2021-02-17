@@ -2,10 +2,10 @@ server:
   port: 8084
 spring:
   mail:
-    host: smtp.gmail.com
-    username: youraccount@gmail.com
-    password: yourpassword
-    port: 587
+    host: smtp.163.com
+    username: mashinas@163.com
+    password: VHCYXVPMXOUQUACI
+    port: 25
     properties:
       mail:
         debug: true
@@ -18,4 +18,5 @@ spring:
           writetimeout: 5000
         transport:
           protocol: smtp
-
+  application:
+    name: music_mail

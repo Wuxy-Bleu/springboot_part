@@ -26,6 +26,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.client.RestTemplate;
 
 import javax.crypto.spec.SecretKeySpec;
 import javax.xml.bind.DatatypeConverter;
@@ -138,5 +139,15 @@ public class AppTest {
                 songListBeans) {
             System.out.println(bean);
         }
+    }
+
+    @Autowired
+    RestTemplate restTemplate;
+
+    @Test
+    public void testRestTemplate() {
+        String url = "http://baidu.com";
+        String json = restTemplate.getForObject(url, String.class);
+        System.out.println(json);
     }
 }
