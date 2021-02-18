@@ -8,6 +8,7 @@ import icu.bleuweb.bean.Song;
 import icu.bleuweb.bean.SongListBean;
 import icu.bleuweb.dataSource.DataSource;
 import icu.bleuweb.dataSource.DataSourceNames;
+import icu.bleuweb.feign.MailFeignService;
 import icu.bleuweb.service.YinMusicService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -146,6 +147,16 @@ public class YinMusicController {
             jsonObject.put("msg", "评论失败");
             return jsonObject;
         }
+    }
+
+
+    @Autowired
+    MailFeignService mailFeignService;
+
+    @GetMapping("/test")
+    public void testFeign() {
+        log.info("admin中调用mail模块的controller");
+        mailFeignService.sendMail();
     }
 
 

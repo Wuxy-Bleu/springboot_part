@@ -42,7 +42,7 @@ spring:
     port: 6379
     # 链接超时时间 单位 ms（毫秒）
     timeout: 3000
-#    password: 123
+  #    password: 123
 
   #mongodb
   data:
@@ -50,6 +50,10 @@ spring:
       host: 139.224.135.120
       port: 27017
       database: myTest
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
 
 MyJwt:
   JWT_SECRET_KEY: C*F-JaNdRgUkXn2r5u8x/A?D(G+KbPeShVmYq3s6v9y$B&E)H@McQfTjWnZr4u7w
@@ -58,3 +62,7 @@ mybatis-plus:
   configuration:
     #控制台打印完整带参数SQL语句
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000

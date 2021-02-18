@@ -26,6 +26,7 @@
         <module>music_admin</module>
         <module>music_chat</module>
         <module>music_mail</module>
+        <module>music_amqp</module>
     </modules>
 
     <properties>

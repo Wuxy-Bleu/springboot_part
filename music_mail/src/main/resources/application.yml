@@ -19,4 +19,8 @@ spring:
         transport:
           protocol: smtp
   application:
-    name: music_mail
+    name: musicMail
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
