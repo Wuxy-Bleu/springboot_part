@@ -150,7 +150,7 @@ export const constantRoutes = [
     path: '/wxy_music',
     children: [
       {
-        path: 'http://localhost:8080/?token=' + getToken(),
+        path: 'http://localhost:81/?token=' + getToken(),
         meta: { title: 'wxy_music', icon: 'link' }
       }
     ]

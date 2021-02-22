@@ -1,5 +1,7 @@
 package icu.bleuweb.service;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import icu.bleuweb.bean.*;
 import icu.bleuweb.dataSource.DataSource;
@@ -104,5 +106,59 @@ public class YinMusicServiceImpl extends ServiceImpl<SongListMapper, SongListBea
             return commentMapper.addPlayListComment(comment);
         else
             return commentMapper.addSongComment(comment);
+    }
+
+    @Autowired
+    CollectMapper collectMapper;
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public List<Collect> getCollectSongs(int userId) {
+        return collectMapper.getCollectSongs(userId);
+    }
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public List<SongListBean> getPlayListByStyle(String style) {
+        return songListMapper.getPlayListByStyle(style);
+    }
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public List<Singer> getSingerBySex(int sex) {
+        return singerMapper.getSingerBySex(sex);
+    }
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public boolean addFavor(Collect collect) {
+        return collectMapper.addFavor(collect);
+    }
+
+    //没用到
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public int addFavor2(Collect collect) {
+        return collectMapper.insert(collect);
+    }
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public boolean isExistCollect(Collect collect) {
+        List<Collect> collects = collectMapper.selectList(new QueryWrapper<Collect>()
+                .exists("select * from collect where user_id = "
+                        + collect.getUserId() + " and song_id = " + collect.getSongId()));
+        return collects == null;
+    }
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public List<Song> getSongsBySingerId(int singerId) {
+        return songMapper.selectList(new QueryWrapper<Song>().eq("singer_id", singerId));
+    }
+
+    @Override
+    @DataSource(DataSourceNames.TP_MUSIC)
+    public boolean likeComment(Comment comment) {
+        return commentMapper.updateById(comment) == 1;
     }
 }

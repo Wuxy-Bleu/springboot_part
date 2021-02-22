@@ -14,4 +14,9 @@ public interface SongListMapper extends BaseMapper<SongListBean> {
 
     @Select("select * from song_list")
     List<SongListBean> allSongList();
+
+    @Select("select *\n" +
+            "    from song_list\n" +
+            "    where style like #{style}")
+    List<SongListBean> getPlayListByStyle(String style);
 }

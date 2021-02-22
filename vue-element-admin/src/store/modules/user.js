@@ -56,7 +56,7 @@ const actions = {
 
         // console.log("在请求用户角色信息时的token" + state.token)
 
-        // console.log(response)
+        console.log(response)
         const { data } = response
 
         if (!data) {

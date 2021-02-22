@@ -24,4 +24,6 @@ public interface SingerMapper extends BaseMapper<Singer> {
     @Select("select * from singer")
     List<Singer> allSingers();
 
+    @Select("select * from singer where sex = #{sex}")
+    List<Singer> getSingerBySex(int sex);
 }

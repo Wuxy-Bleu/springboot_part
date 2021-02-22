@@ -89,12 +89,12 @@
             <scope>test</scope>
         </dependency>
 
-<!--        &lt;!&ndash; Junit依赖 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <!--        &lt;!&ndash; Junit依赖 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>junit</groupId>-->
+        <!--            <artifactId>junit</artifactId>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
 
         <!--    阿里的注册中心 组件 依赖于spring-cloud-alibaba-dependencies   -->
         <dependency>
@@ -173,5 +173,23 @@
 
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+<!--            <activation>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--            </activation>-->
+            <properties>
+                <deploy.type>dev</deploy.type>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <deploy.type>test</deploy.type>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>

@@ -54,8 +54,8 @@ public class CollectController {
             jsonObject.put("msg", "收藏成功");
             return jsonObject;
         }else {
-            jsonObject.put("code", 0);
-            jsonObject.put("msg", "收藏失败");
+                jsonObject.put("code", 0);
+                jsonObject.put("msg", "收藏失败");
             return jsonObject;
         }
     }

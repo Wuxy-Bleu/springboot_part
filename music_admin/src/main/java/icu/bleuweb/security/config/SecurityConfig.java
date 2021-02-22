@@ -61,7 +61,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 "/**/*.js", "/**/*.map", "/**/*.html",
                 "/**/*.png",
                 "/img/**/*.png", "/img/**/*.jpg",
-                "/song/*.mp3");//最后两个规则是我自己写的
+                "/song/*.mp3");
     }
 
     @Override

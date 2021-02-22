@@ -1,10 +1,7 @@
 package icu.bleuweb.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import icu.bleuweb.bean.Comment;
-import icu.bleuweb.bean.Singer;
-import icu.bleuweb.bean.Song;
-import icu.bleuweb.bean.SongListBean;
+import icu.bleuweb.bean.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -30,4 +27,18 @@ public interface YinMusicService extends IService<SongListBean> {
     boolean setRankForPlaylist(HashMap<String, Integer> map);
 
     boolean addComment(Comment comment);
+
+    List<Collect> getCollectSongs(int userId);
+
+    List<SongListBean> getPlayListByStyle(String style);
+
+    List<Singer> getSingerBySex(int sex);
+
+    boolean addFavor(Collect collect);
+
+    boolean isExistCollect(Collect collect);
+
+    List<Song> getSongsBySingerId(int singerId);
+
+    boolean likeComment(Comment comment);
 }

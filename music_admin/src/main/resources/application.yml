@@ -20,6 +20,9 @@ spring:
         username: root
         password: 123456
         driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: dev
+
 
   #使用Lettuce client
   redis:
@@ -42,7 +45,7 @@ spring:
     port: 6379
     # 链接超时时间 单位 ms（毫秒）
     timeout: 3000
-  #    password: 123
+    password: Xianyu@1i!_bleu
 
   #mongodb
   data:

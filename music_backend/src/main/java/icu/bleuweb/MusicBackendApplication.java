@@ -23,20 +23,20 @@ public class MusicBackendApplication {
     public static void main(String[] args) {
         SpringApplication.run(MusicBackendApplication.class, args);
 
-        ApplicationContext applicationContext = SpringUtils.getApplicationContext();
-        DataSource bean = applicationContext.getBean(DataSource.class);
-        Object druid = applicationContext.getBean("druid");
-
-        System.out.println(bean == druid);
-
-        String name = applicationContext.getBean(DataSource.class).getClass().getName();
-        String canonicalName = applicationContext.getBean(DataSource.class).getClass().getCanonicalName();
-        Annotation[] annotations = applicationContext.getBean(DataSource.class).getClass().getAnnotations();
-        String simpleName = applicationContext.getBean(DataSource.class).getClass().getSimpleName();
-        String typeName = applicationContext.getBean(DataSource.class).getClass().getTypeName();
-
-
-        System.out.println(applicationContext);
-        System.out.println(bean);
+//        ApplicationContext applicationContext = SpringUtils.getApplicationContext();
+//        DataSource bean = applicationContext.getBean(DataSource.class);
+//        Object druid = applicationContext.getBean("druid");
+//
+//        System.out.println(bean == druid);
+//
+//        String name = applicationContext.getBean(DataSource.class).getClass().getName();
+//        String canonicalName = applicationContext.getBean(DataSource.class).getClass().getCanonicalName();
+//        Annotation[] annotations = applicationContext.getBean(DataSource.class).getClass().getAnnotations();
+//        String simpleName = applicationContext.getBean(DataSource.class).getClass().getSimpleName();
+//        String typeName = applicationContext.getBean(DataSource.class).getClass().getTypeName();
+//
+//
+//        System.out.println(applicationContext);
+//        System.out.println(bean);
     }
 }
