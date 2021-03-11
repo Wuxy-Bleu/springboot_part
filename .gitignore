@@ -10,3 +10,7 @@ target/
 .vscode/
 node_modules/
 dist/
+.github\
+debug.log
+!/vue-element-admin/*.md
+
