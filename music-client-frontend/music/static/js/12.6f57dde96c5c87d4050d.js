@@ -1,0 +1,2 @@
+webpackJsonp([12],{c5Mg:function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("div",{staticClass:"error-page"},[t("div",{staticClass:"error-code"},[this._v("404")])])}]};var s=r("VU/8")({name:"error-page"},n,!1,function(e){r("gmEl")},"data-v-1e227cd9",null);t.default=s.exports},gmEl:function(e,t){}});
+//# sourceMappingURL=12.6f57dde96c5c87d4050d.js.map

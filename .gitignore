@@ -15,3 +15,4 @@ dist/
 !/vue-element-admin/*.md
 
 !/vue-element-admin/debug.log
+!/music-client-frontend/README.md
