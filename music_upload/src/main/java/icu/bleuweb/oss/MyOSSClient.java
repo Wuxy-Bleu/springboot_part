@@ -74,6 +74,7 @@ public final class MyOSSClient {
         respMap.put("host", host);
         respMap.put("expire", String.valueOf(expireEndTime / 1000));
 
+        //回调没用到
         JSONObject jasonCallback = new JSONObject();
         jasonCallback.put("callbackUrl", callbackUrl);
         jasonCallback.put("callbackBody",
