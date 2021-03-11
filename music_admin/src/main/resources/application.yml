@@ -13,12 +13,12 @@ spring:
       music-admin:
         url: jdbc:mysql://localhost:3306/music_admin?serverTimezone=UTC
         username: root
-        password: 123456
+        password: #pw#
         driver-class-name: com.mysql.cj.jdbc.Driver
       tp-music:
         url: jdbc:mysql://localhost:3306/tp_music?serverTimezone=UTC
         username: root
-        password: 123456
+        password: #pw#
         driver-class-name: com.mysql.cj.jdbc.Driver
   profiles:
     active: dev
@@ -29,7 +29,7 @@ spring:
     # Redis数据库索引（默认为0）
     database: 0
     # Redis服务器地址
-    host: 139.224.135.120
+    host: #ip#
     # Redis 线程池设置
     lettuce:
       pool:
@@ -45,12 +45,12 @@ spring:
     port: 6379
     # 链接超时时间 单位 ms（毫秒）
     timeout: 3000
-    password: Xianyu@1i!_bleu
+    password:
 
   #mongodb
   data:
     mongodb:
-      host: 139.224.135.120
+      host:
       port: 27017
       database: myTest
   cloud:
@@ -59,7 +59,7 @@ spring:
         server-addr: 127.0.0.1:8848
 
 MyJwt:
-  JWT_SECRET_KEY: C*F-JaNdRgUkXn2r5u8x/A?D(G+KbPeShVmYq3s6v9y$B&E)H@McQfTjWnZr4u7w
+  JWT_SECRET_KEY:
 
 mybatis-plus:
   configuration:

@@ -4,7 +4,7 @@ spring:
   mail:
     host: smtp.163.com
     username: mashinas@163.com
-    password: VHCYXVPMXOUQUACI
+    password:
     port: 25
     properties:
       mail:

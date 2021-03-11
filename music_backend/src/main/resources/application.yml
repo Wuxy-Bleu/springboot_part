@@ -12,13 +12,13 @@ spring:
 #    one:
 #      url: jdbc:mysql://localhost:3306/music?serverTimezone=UTC
 #      username: root
-#      password: 123456
+#      password:
 #      driver-class-name: com.mysql.cj.jdbc.Driver
 #      type: com.alibaba.druid.pool.DruidDataSource
 #    two:
 #      url: jdbc:mysql://localhost:3306/tp_music?serverTimezone=UTC
 #      username: root
-#      password: 123456
+#      password:
 #      driver-class-name: com.mysql.cj.jdbc.Driver
 #      type: com.alibaba.druid.pool.DruidDataSource
   datasource:
@@ -26,12 +26,12 @@ spring:
       one:
         url: jdbc:mysql://localhost:3306/music?serverTimezone=UTC
         username: root
-        password: 123456
+        password:
         driver-class-name: com.mysql.cj.jdbc.Driver
       two:
         url: jdbc:mysql://localhost:3306/tp_music?serverTimezone=UTC
         username: root
-        password: 123456
+        password:
         driver-class-name: com.mysql.cj.jdbc.Driver
 
     # 初始化连接池个数
